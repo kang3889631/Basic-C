@@ -3,24 +3,21 @@ using namespace std;
 
 int main()
 {
-	float N, K;
-	int y = 0;
-	while (cin >> N >> K)
+	double n, k;
+	while (cin >> n >> k)
 	{
-		float p = 200.00;
-		for (y = 1; y <= 20; y++)
-		{
-			if (y*N >= p)
-			{
-				cout << y << endl;
-				goto loop;
+		double price = 200;
+		bool success = 0;
+		for (int i = 1; i <= 20; i++) {
+			if (n*i >= price) {
+				success = 1;
+				cout << i << endl;
+				break;
 			}
-			else if (y*N < p)
-				p = p *(1 + 0.01*K);
+			price *= 1 + k / 100;
 		}
-		cout << "impossible" << endl;
-	loop:;
-		y = 0;
+		if (success == 0)
+			cout << "Impossible" << endl;
 	}
 	return 0;
 }
