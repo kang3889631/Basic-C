@@ -1,2 +1,2 @@
 # Basic-C
-All these .cpp files are based on coursera "Basics of Calculus and C Programming" taught by Ge Li.
+All these .cpp files are based on coursera "Introduction of Computing and Basics of C Language" taught by Ge Li.
